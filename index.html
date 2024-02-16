@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+     
+    <!--Подключить стилевой файл плагина-->
+    <link rel="stylesheet" href="js/plugin/fancybox/fancyapps-fancybox-b507d31/dist/jquery.fancybox.min.css" /> 
+    <link rel="stylesheet" href="js/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+</head>
+<body>
+<!--  меню-->
+   <header>
+        <div>
+            <a href="#anchor-section1" class="rollover"></a>    
+        </div>
+        
+        <ul id="menu-ul">
+             <li><a href="#anchor-section2">Текст и картинки</a></li>
+             <li><a href="#anchor-section3">Пример слайдера</a></li>
+             <li><a href="#anchor-section4">Кнопки и картинки</a></li>
+             <li><a href="#anchor-section5">Вопрос - ответ</a></li>
+             <li><a href="#anchor-section-form"><input type="button" value="К форме" class="button_to_form"></a></li>
+        </ul>      
+   </header>
+   
+   <main>
+<!--     секция 1-->      
+      <section class="sect-data">
+        <div class="anchor">
+            <span id="anchor-section1"></span>
+        </div>  
+             
+        <div class="section-container" id="div-sect1">
+            <div id="div-sect1-data">
+                 <h2>Покажи нам чудеса<br><span class="blue-color">своей вёрстки</span></h2>
+                 
+                 <div id="div-sect1-data-1">Это текстовое задание, которое нужно просто и грамотно сверстать. Мы уверены, что у тебя всё получится.</div>
+                 
+                 <div id="div_scroll">
+                     <p>Покажи скролл <span class="blue-color">до формы:</span></p>
+                     <a href="#section-form"><input type="button" value="К форме" class="button_to_form"></a>
+                 </div>
+             </div>
+             
+             <div id="div-sect1-img">              
+                <div id="div-sect1-img-col1">
+                     <img src="img/img_1.jpg" alt="" class="sect1_img">
+                     <img src="img/img_2.jpg" alt="" class="sect1_img">           
+                </div>
+
+                <div id="div-sect1-img-col2">
+                     <img src="img/img_3.jpg" alt="" class="sect1_img">
+                </div>                 
+             </div>       
+        </div>        
+      </section>
+      
+<!--     секция 2 -->           
+      <section class="sect-data" id="section2">
+        <div class="anchor">
+            <span id="anchor-section2"></span>
+        </div> 
+        
+        <div class="section-container" id="div-sect2">
+            <div>
+              <h2>Про вакансию</h2>
+
+              <div class="div-sect2-text">Мы ищем аккуратного верстальщика, который хочет учиться и развиваться. С этим мы, конечно же, поможем.</div>
+
+              <div class="div-sect2-text">Напомним про условия:</div>
+
+              <div>
+                  <div class="condition">
+                      <p class="condition-1">20 000</p>
+                      <p class="condition-text">Твой оклад на время стажировки (Возможны премии)</p>
+                  </div>
+
+                  <div class="condition">
+                      <p class="condition-1">5/2</p>
+                      <p class="condition-text">Рабочий график</p>
+                  </div>
+
+                  <div class="condition">
+                      <p class="condition-1">8 ч</p>
+                      <p class="condition-text">Рабочий день</p>
+                  </div>
+              </div>               
+            </div>
+
+            <div id="sect2-img">
+                <img src="img/img_1.jpg" alt="">
+                <img src="img/img_2.jpg" alt="">
+                <img src="img/img_3.jpg" alt="">        
+            </div>    
+        </div>      
+      </section>
+      
+<!--     секция 3 СЛАЙДЕР-->         
+    <section class="sect-data">
+         <div class="anchor">
+            <span id="anchor-section3"></span>
+         </div>  
+        
+         <div class="section-container">
+              <h2>Сверстай слайдер</h2>
+         
+                <!--карусель фото-->
+                <div class="owl-carousel owl-theme" id="owl-carousel">                    
+                    <a data-fancybox="gallery" href="img/img_1.jpg" data-caption="img1">
+                        <div class="item" style="background-image: url('img/img_1.jpg')">
+                            <div class="slide_title">Заголовок слайда1</div>     
+                        </div>                           
+                    </a>                       
+
+                    <a data-fancybox="gallery" href="img/img_2.jpg" data-caption="img2">
+                        <div class="item" style="background-image: url('img/img_2.jpg')">
+                            <div class="slide_title">Заголовок слайда2</div>     
+                        </div>                           
+                    </a>
+                    
+                    <a data-fancybox="gallery" href="img/img_3.jpg" data-caption="img3">
+                        <div class="item" style="background-image: url('img/img_3.jpg')">
+                            <div class="slide_title">Заголовок слайда3</div>     
+                        </div>                           
+                    </a>   
+                    
+                    <a data-fancybox="gallery" href="img/img_1.jpg" data-caption="img1">
+                        <div class="item" style="background-image: url('img/img_1.jpg')">
+                            <div class="slide_title">Заголовок слайда4</div>     
+                        </div>                           
+                    </a>                       
+
+                    <a data-fancybox="gallery" href="img/img_2.jpg" data-caption="img2">
+                        <div class="item" style="background-image: url('img/img_2.jpg')">
+                            <div class="slide_title">Заголовок слайда5</div>     
+                        </div>                           
+                    </a>
+                    
+                    <a data-fancybox="gallery" href="img/img_3.jpg" data-caption="img3">
+                        <div class="item" style="background-image: url('img/img_3.jpg')">
+                            <div class="slide_title">Заголовок слайда6</div>     
+                        </div>                           
+                    </a>  
+                    
+                    <a data-fancybox="gallery" href="img/img_1.jpg" data-caption="img1">
+                        <div class="item" style="background-image: url('img/img_1.jpg')">
+                            <div class="slide_title">Заголовок слайда7</div>     
+                        </div>                           
+                    </a>                       
+
+                    <a data-fancybox="gallery" href="img/img_2.jpg" data-caption="img2">
+                        <div class="item" style="background-image: url('img/img_2.jpg')">
+                            <div class="slide_title">Заголовок слайда8</div>     
+                        </div>                           
+                    </a>            
+                </div>
+        </div>         
+    </section>
+      
+<!--     секция 4 Картинки-->       
+      <section class="sect-data">
+          <div class="anchor">
+             <span id="anchor-section4"></span>
+          </div> 
+          
+          <div class="section-container" id="div-galery">          
+                <div id="big_img"></div>
+
+                <ul id="galery-items">
+                    <li id="img_item_1">
+                        <img src="img/img_1.jpg" alt="">
+                        <p>Картинка 1</p>
+                    </li>
+
+                    <li id="img_item_2">
+                        <img src="img/img_2.jpg" alt="">
+                        <p>Картинка 2</p>
+                    </li>
+
+                    <li id="img_item_3">
+                        <img src="img/img_3.jpg" alt="">
+                        <p>Картинка 3</p>
+                    </li>
+                </ul> 
+         </div>
+      </section>
+      
+ <!--     секция 5 Ответы вопросы-->      
+      <section class="sect-data"> 
+        <div class="anchor">
+            <span id="anchor-section5"></span>
+        </div> 
+             
+        <div class="section-container">
+            <h2>Ответы на вопросы</h2>
+            
+            <ul id="faq-list">       
+                <li class="faq-list-item">
+                    <details>
+                      <summary>
+                          <span>У вас много проектов?</span>
+                          <div class="faq-img">
+                              <div class="faq-img-1">+</div>                     
+                          </div>
+                      </summary>
+                      <p>Достаточно, чтобы работать и получать удовольствие от работы)</p>
+                    </details>                     
+                </li>                
+                
+                <li class="faq-list-item">          
+                    <details>
+                      <summary>
+                          <span>Есть ли карьерный рост?</span>
+                          <div class="faq-img">
+                              <div class="faq-img-1">+</div> 
+                          </div>                 
+                      </summary>
+                      <p>Карьерный рост есть, но он зависит только от тебя. Никто специально тянуть не будет.</p>
+                    </details>
+                </li>
+                
+                <li class="faq-list-item">
+                    <details>
+                      <summary>
+                           <span>У вас большой штат?</span>
+                           <div class="faq-img">
+                              <div class="faq-img-1">+</div> 
+                           </div>                   
+                      </summary>
+                      <p>Штат небольшой</p>
+                    </details>
+                </li>
+                
+                <li class="faq-list-item">
+                    <details>
+                      <summary>
+                          <span>Какие цели у вашей студии?</span>
+                          <div class="faq-img">
+                              <div class="faq-img-1">+</div> 
+                          </div>                         
+                      </summary>
+                      <p>Развивать свои продукты в среднем ценовом сегменте. Занять не занятую нишу отличных сайтов по адекватной цене.</p>
+                    </details>
+                </li> 
+            </ul>
+        </div>
+      </section> 
+       
+<!--     секция 5 Форма обратной связи-->          
+      <section id="section-form">
+        <div class="anchor">
+            <span id="anchor-section-form"></span>
+        </div> 
+        
+        <div id="section-form-1">
+            <div id="section-form-1-div">
+                <h1>Форма ОС</h1>
+                
+                <p id="section-form-p1">Сверстай форму обратной связи. Будет круто, если заявки будут приходить сюда: a@growtask.ru</p>
+                
+                <p id="section-form-p2">Не забудь вставить соц. сети</p>
+                        
+                <a href="https://vk.com/growtask">
+                    <div class="button-div" id="vk">
+                        <div class="img-overlay"></div>
+                    </div>
+                </a>
+                
+                <a href="https://t.me/growtask">
+                    <div class="button-div" id="tg">
+                        <div class="img-overlay"></div>
+                    </div>
+                </a>
+            </div>             
+
+             <form action="" method="post" id="form-os" onsubmit="return checkForm('event')">
+               <input type="text" class="" id="id_mes" name="mes" placeholder="Напиши вопрос*">
+               <input type="text" class="" id="id_phone" name="phone" placeholder="Телефон или почта*">
+               <input type="text" class="" id="id_fio" name="fio" placeholder="Твоё имя*" data-reg="^[А-ЯЁ][ф-яё]*$">
+               <input type="text" class="" id="id_soc" name="soc" placeholder="Соц.сеть или мессенджер*">
+
+               <input type="submit" value="Отправить заявку" name="sentMess" onclick="">   
+                          
+               <input type="checkbox" class="" id="id_sogl" name="soglCheck" placeholder="Номер телефона">
+               <label for="id_sogl" id="label-sogl">Согласие с политикой</label>
+            </form>                 
+        
+        </div>
+      </section>       
+   </main>  
+   
+   <script src="js/sect_4.js"></script> 
+   <script src="js/form-os.js"></script> 
+   
+   	<!-- Сначала подключаем js-файл с jQuery-->
+    <script src="js/jquery.min.js"></script>
+    <!--подключаем js-файл плагина после jQuery:-->
+    <script src="js/plugin/fancybox/fancyapps-fancybox-b507d31/dist/jquery.fancybox.min.js"></script> 
+    <script src="js/plugin/owl.carousel.min.js"></script>  
+    <!--    мой скрипт обработки -->
+    <script  src="js/img-carusel.js"></script>
+</body>
+</html>

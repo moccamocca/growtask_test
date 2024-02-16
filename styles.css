@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;  /*плавная прокрутка по якорным ссылкам*/
+}
+
+h1 {
+    font-size:  56px;
+    font-style: 
+}
+
+h2 {
+    font-size:  40px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+body {
+    position: relative;
+    width: 1260px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/************************шапка***************************/
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: white;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu-ul {
+    height: 100%;
+    width: 550px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-right: 150px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#menu-ul a {
+    color: black;
+}
+
+#menu-ul a:hover {
+    color: #14CCCC;
+}
+
+.button_to_form {
+    background-color: #14CCCC; /*#11A6A6;*/
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 11px;
+}
+
+.button_to_form:hover {
+    background-color: #11A6A6;
+}
+
+/*рисунок прокуручивается*/
+.rollover {
+    width: 200px;
+    height: 50px; 
+    margin-left: 150px;
+    display: block; 
+    background-position:top;
+    background-size: cover;
+    background-image: url(img/label1.png);
+}
+
+.rollover:hover {
+    background-position: 0 -40px; /* Смещение фона */
+    transition-duration: .92s;
+}
+
+/*************************основное***************************/
+main {
+    width: 100%;
+    position: absolute;
+    top: 50px;   /*опустить на высоту шапки*/
+}
+
+.sect-data {
+    width: 100%;
+    border: 1px solid white;  /*чтобы верхние и нижние внешние отступы блоков не схлопывались*/
+}
+
+/*четные секции залить цветом*/
+.sect-data:nth-child(even) {
+    background-color: #E1FAFA;    
+}
+
+/*содержимое внутри каждой секции*/
+.section-container {
+    width: 960px;
+/*    height: 500px; высота зависит от содержимого */
+    margin: 100px 150px;
+/*    border: 1px solid #f5ff00;*/
+}
+
+#section-form {
+    width: 100%;
+    height: 500px;
+}
+
+/* Отступы якорей */
+.anchor{
+    position: relative;
+}
+
+.anchor #anchor-section1, #anchor-section2, #anchor-section3, #anchor-section4, #anchor-section5{
+    position:absolute; 
+    top: -50px;
+}
+
+/************************секция 1***********************/
+#div-sect1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+#div-sect1-data {
+    width: 480px;  
+/*    border: 1px solid #2700ff;*/
+}
+
+#div-sect1-img {
+    width: 480px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+/*    border: 1px solid red;*/
+}
+
+.sect1_img {
+    width: 200px;
+    height: 200px; 
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#div-sect1-img-col1 {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;    
+/*    border: 1px solid red;*/
+}
+
+#div-sect1-img-col2 {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;  
+/*    border: 1px solid red;*/
+}
+
+#div-sect1-data-1 {
+    width: 320px;
+    margin: 40px 0;
+}
+
+#div_scroll {
+    background-color: black;
+    width: 350px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    color: white;
+}
+
+.blue-color {
+    color: #11A6A6; /*#14CCCC;*/
+}
+
+/****************************секция 2*******************************/
+#section2 {
+    width: 100%;
+    height: 1000px;   
+}
+
+#div-sect2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;     
+}
+
+.div-sect2-text {
+    width: 400px;
+    margin: 20px 0;
+}
+
+.condition {
+    background-color: black;
+    width: 400px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-radius: 10px; 
+    margin: 20px 0;
+    color: white;
+}
+
+.condition p {
+    display: block;
+    padding-left: 30px;
+}
+
+.condition-1 {
+    color: #14CCCC;  
+    font-size: 40px;
+}
+
+.condition-text {
+    font-size: 12px;
+}
+
+#sect2-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#sect2-img img {
+    width: 500px;
+    height: 250px; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/**********************секция 3 Слайдер*********************/
+.owl-carousel {
+    margin-top: 20px;
+}
+
+.item {
+    width: 200px;
+    height: 300px; 
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.item:hover > .slide_title {
+    background-color: #14CCCC;
+}
+
+/*кнопки предыдущий следующий у слайдера*/
+.owl-nav {
+    position: absolute;
+    top: -80px;
+    left: 800px;
+    font-size: 30px;
+}
+
+/*подпись на слайде*/
+.slide_title {
+    height: 30px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/********************секция 4 галерея картинок*******************/
+#section4 ul {
+    list-style-type: none;
+}
+
+#div-galery {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;   
+}
+
+#galery-items li {
+    width: 400px;
+    height: 60px;
+    background-color: aliceblue;
+    margin: 20px 0;
+    box-shadow: 5px 5px 5px 5px #DAF2F2;    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;       
+}
+
+#galery-items li:hover {
+    box-shadow: none; /*1px 1px 1px 1px #14CCCC;*/
+}
+
+#galery-items img {
+    width: 50px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+#big_img{
+    position: relative;
+    width: 500px;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/img_1.jpg);
+}
+
+#big_img img{
+    position: absolute;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+/*****************секция 5 вопросы-ответы*****************/
+#faq-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-list-item {
+    background-color: #E1FAFA;
+    margin: 20px 0;
+    cursor: pointer;  
+}
+
+#faq-list details {
+  border-radius: 5px;
+  transition: 50ms;
+}
+
+#faq-list details summary {
+    list-style: none;
+    height: 50px;
+    font-weight: bold; 
+    padding-left: 20px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#faq-list details[open] {
+    padding-bottom: 20px;
+}
+
+#faq-list details p {
+    padding-left: 20px;
+}
+
+.faq-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px; 
+    background-color: #14CCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-img-1 {
+    height: 25px;
+    width: 25px;
+    background-color: #14CCCC;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#faq-list details summary:hover {
+    color: #14CCCC;
+}
+
+#faq-list details[open] summary .faq-img  .faq-img-1 {
+    transform: rotate(-45deg);
+    transition: transform 1s;
+}
+
+#faq-list details summary .faq-img  .faq-img-1 {
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+
+/**************форма ос*****************/
+#section-form {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-form-1 {
+    width: 1000px;
+    height: 300px;
+    background-image: url(img/fon-form.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+
+#section-form form {
+    width: 500px;
+    height: 170px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+}
+
+#section-form form input[type=text] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #DAF2F2;
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+
+#section-form form input[type=submit] {
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-left: 10px;
+    background-color: #14CCCC;
+    color: white;
+    font-size: 10px;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+
+#section-form form input[type=text]:hover {
+    border: 1px solid #17E5E5;
+}
+
+#section-form form input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #14CCCC;
+    border-radius: 5px;
+}
+
+#section-form form input[type=submit]:hover {
+    background-color: #17E5E5;
+}
+
+#section-form-1-div{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    color: white;
+}
+
+#section-form-p1{
+    display: block;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+
+#section-form-p2{
+    display: block;
+    font-size: 15px;
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+}
+
+.button-div {
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+}
+
+#vk {
+    background-image: url("img/vk.png");
+}
+
+#tg {
+    background-image: url("img/tg.png");
+}
+
+.img-overlay {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.img-overlay:hover {
+    background-color: rgba(0, 255, 235, 0.3);
+}
+
+#label-sogl {
+    font-size: 10px;
+}
+
+input[type='checkbox'] {
+    accent-color: #14CCCC;
+    border-radius: 5px;
+    color: white;
+}
+
